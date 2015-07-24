@@ -1,0 +1,37 @@
+{
+  "name": "hkp-client",
+  "main": "hkp-client.js",
+  "version": "1.0.0",
+  "authors": [
+    "Gabriel Medina <rha7.com@gmail.com>"
+  ],
+  "description": "HKP PGP Key Server Client",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "hkp",
+    "pgp",
+    "gpg",
+    "key",
+    "server",
+    "client",
+    "search",
+    "fetch",
+    "lookup",
+    "hkps"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Rhaseven7h/hkp-client",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Rhaseven7h/hkp-client.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
