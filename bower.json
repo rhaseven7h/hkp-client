@@ -1,7 +1,7 @@
 {
   "name": "hkp-client",
   "main": "src/hkp-client.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     "Gabriel Medina <rha7.com@gmail.com>"
   ],
