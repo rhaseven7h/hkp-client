@@ -27,35 +27,54 @@
 // ;
 
 function parseKeyLines(data) {
-  var fields, line, lines, pub, records, uid;
+  var fields, line, lines, pub, uid, info, active, inactive;
   lines = data.split('\n');
   uid = null;
   pub = null;
-  records = [];
+  info = null;
+  active = [];
+  inactive = [];
   while (line = lines.shift()) {
     fields = line.split(':');
     if (fields[0] === 'pub') {
       pub = {
         keyId: fields[1],
+        algo: fields[2],
         bits: fields[3],
-        time: fields[4]
+        time: fields[4],
+        exp: fields[5],
+        flags: fields[6]
       };
     } else if (fields[0] === 'uid') {
       uid = {
         user: fields[1],
-        time: fields[2]
+        time: fields[2],
+        exp: fields[3],
+        flags: fields[4]
       };
+    } else if (fields[0] === 'info') {
+      info = {
+        version: fields[1],
+        count: fields[2]
+      }
     }
     if (pub !== null && uid !== null) {
-      records.push({
-        uid: uid,
-        pub: pub
-      });
+      if (pub.flags.indexOf("r") < 0 && pub.flags.indexOf("d") < 0 && pub.flags.indexOf("e") < 0) {
+        active.push({
+          uid: uid,
+          pub: pub,
+        });
+      } else {
+        inactive.push({
+          uid: uid,
+          pub: pub,
+        });
+      }
       uid = null;
       pub = null;
     }
   }
-  return records;
+  return { info: info, active: active, inactive: inactive };
 }
 
 function truncateKey(data) {
