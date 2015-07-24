@@ -64,30 +64,48 @@ hkpClient.search("rha7.com@gmail.com")
 Sample result:
 
 ```
-[
-    {
-        "uid": {
-            "user": "Gabriel Medina (Rha7) <rha7.com@gmail.com>",
-            "time": "1437515835"
-        },
-        "pub": {
-            "keyId": "35F6CE83886558ABF6CE59D7AD5F669D16A76D39",
-            "bits": "4096",
-            "time": "1437515835"
-        }
+{
+    "info": {
+        "version": "1",
+        "count": "2"
     },
-    {
-        "uid": {
-            "user": "Gabriel Medina (Rha7) <rha7.com@gmail.com>",
-            "time": "1265153330"
-        },
-        "pub": {
-            "keyId": "F73CE1DBE51F9369C7F59204992AFE46565BF06B",
-            "bits": "2048",
-            "time": "1265153330"
+    "active": [
+        {
+            "uid": {
+                "user": "Gabriel Medina (Ooyala) <gmedina@ooyala.com>",
+                "time": "1437516005",
+                "exp": "",
+                "flags": ""
+            },
+            "pub": {
+                "keyId": "F7EB45A01722B93A4F60EA22910915ABE34A15DA",
+                "algo": "1",
+                "bits": "4096",
+                "time": "1437516005",
+                "exp": "1563746405",
+                "flags": ""
+            }
         }
-    }
-]
+    ],
+    "inactive": [
+        {
+            "uid": {
+                "user": "Gabriel Medina (Ooyala) <gmedina@ooyala.com>",
+                "time": "1435926534",
+                "exp": "",
+                "flags": ""
+            },
+            "pub": {
+                "keyId": "5B65834B595BF1DCF5BF07A083D8541B89EB0920",
+                "algo": "1",
+                "bits": "4096",
+                "time": "1435926534",
+                "exp": "1562156934",
+                "flags": "r"
+            }
+        }
+    ]
+}
 ```
 
 ## How to fetch a key definition
@@ -160,4 +178,4 @@ AA7FgjNpYA8kdEZfArc=
 
 ## Finally
 
-If you want to say hi, drop me a line [by mail (rha7.com@gmail.com)](mailto:rha7.com@gmail.com), [Twitter (@\_Rha7\_)](https://twitter.com/_Rha7_) or [LinkedIn (gmedinam)](https://mx.linkedin.com/in/gmedinam). 
+If you want to say hi, drop me a line [by mail (rha7.com@gmail.com)](mailto:rha7.com@gmail.com), [Twitter (@\_Rha7\_)](https://twitter.com/_Rha7_) or [LinkedIn (gmedinam)](https://mx.linkedin.com/in/gmedinam).
