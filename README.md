@@ -160,4 +160,4 @@ AA7FgjNpYA8kdEZfArc=
 
 ## Finally
 
-If you want to say hi, drop me a line [by mail (rha7.com@gmail.com)](mailto:rha7.com@gmail.com), [Twitter (@_Rha7_)](https://twitter.com/_Rha7_) or [LinkedIn (gmedinam)](https://mx.linkedin.com/in/gmedinam). 
+If you want to say hi, drop me a line [by mail (rha7.com@gmail.com)](mailto:rha7.com@gmail.com), [Twitter (@\_Rha7\_)](https://twitter.com/_Rha7_) or [LinkedIn (gmedinam)](https://mx.linkedin.com/in/gmedinam). 
